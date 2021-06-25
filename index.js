@@ -67,7 +67,7 @@ app.get("/artwork", (req, res) => {
 		 cloudinary.v2.uploader.upload(id+"."+writeformat,
         { public_id: id }, 
          function(error, result) {console.log(result.secure_url);
-         res.send(airtable({"File ID":id,"File Name":file,"Artist Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
+         res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
 		 
 		 });
 		 
