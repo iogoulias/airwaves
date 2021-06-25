@@ -100,7 +100,7 @@ console.log(fields["File Name"])
     console.error(err);
   } 
   if (hasimage) {  
-	  cloudinary.uploader.destroy(id, function(result) { console.log(result) });
+	//  cloudinary.uploader.destroy(id, function(result) { console.log(result) });
   }
   return true;
   });
