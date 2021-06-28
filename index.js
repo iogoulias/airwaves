@@ -63,13 +63,15 @@ app.get("/artwork", (req, res) => {
 		 writeformat="jpg";
 	 }
 	 fs.writeFile(id+"."+writeformat,Buffer.from(image.data),"binary",function(){
+		var temppath=path.dirname(require.main.filename)
+		// cloudinary.v2.uploader.upload(id+"."+writeformat,
+      //  { public_id: id }, 
+       //  function(error, result) {console.log(result.secure_url);
+       //  res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
+console.log(temppath+"\\"+id+"."+writeformat)
+res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":temppath+"/"+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
 		 
-		 cloudinary.v2.uploader.upload(id+"."+writeformat,
-        { public_id: id }, 
-         function(error, result) {console.log(result.secure_url);
-         res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
-		 
-		 });
+		// });
 		 
 		 
 	 })
