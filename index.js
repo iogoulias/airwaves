@@ -69,7 +69,8 @@ app.get("/artwork", (req, res) => {
        //  function(error, result) {console.log(result.secure_url);
        //  res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
 console.log(temppath+"\\"+id+"."+writeformat)
-res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":temppath+"/"+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
+
+res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-app.herokuapp.com/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
 		 
 		// });
 		 
