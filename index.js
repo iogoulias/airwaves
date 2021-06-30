@@ -93,7 +93,7 @@ app.listen(port, () => {
 
 function airtable(fields,id,hasimage) {
 console.log("called airtable");
-   base('TracksTestNewApp').create([
+   base('Tracks').create([
       {
       "fields": fields
    }
