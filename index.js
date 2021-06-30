@@ -57,6 +57,7 @@ app.get("/artwork", (req, res) => {
 	if ((tag.tags).hasOwnProperty("TLEN") && (tag.tags.TLEN).hasOwnProperty("data") ) {
 	duration = tag.tags.TLEN.data;	
 	}
+	  console.log("duration : "+duration)
       if (image!=null) {
 	 var writeformat=((image.format).split("/"))[1];
 	 if (writeformat=="jpeg") {	 
