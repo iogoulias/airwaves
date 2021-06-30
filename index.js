@@ -101,10 +101,11 @@ console.log("called airtable");
    if (err) {
 console.log(fields["File Name"])
     console.error(err);
+    return {"result":"not ok"};
   } 
   if (hasimage) {  
 	//  cloudinary.uploader.destroy(id, function(result) { console.log(result) });
   }
-  return true;
+  return {"result":"ok"};
   });
 }
