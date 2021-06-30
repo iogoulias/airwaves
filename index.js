@@ -55,7 +55,7 @@ app.get("/artwork", (req, res) => {
 	}
 	var duration=null;
 	if ((tag.tags).hasOwnProperty("TLEN") && (tag.tags.TLEN).hasOwnProperty("data") ) {
-	duration = tag.tags.TLEN.data;	
+	duration = parseFloat(tag.tags.TLEN.data);	
 	}
 	  console.log("duration : "+duration)
       if (image!=null) {
