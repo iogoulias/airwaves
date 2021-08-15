@@ -78,7 +78,7 @@ res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https:
 		 
 	 })
       } else {
-		res.send(airtable({"File ID":id,"File Name":file,"Artist Artwork":null,"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,false));
+		res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":null,"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,false));
       }
   },
   onError: function(error) {
