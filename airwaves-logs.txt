@@ -1,0 +1,126 @@
+[airwaves] [2021-09-10 09:50:41] 
+[airwaves] [2021-09-10 09:50:41] > musicapp@1.0.0 start /workspace
+[airwaves] [2021-09-10 09:50:41] > node index.js
+[airwaves] [2021-09-10 09:50:41] 
+[airwaves] [2021-09-10 09:50:41] Example app is listening on port http://localhost:${port}
+[airwaves] [2021-09-10 12:18:46] duration : 297000
+[airwaves] [2021-09-10 12:18:46] /workspace\1sd_Kf7s5b82GpLF4u_iFTMOSUuaGqtRd.jpg
+[airwaves] [2021-09-10 12:18:46] called airtable
+[airwaves] [2021-09-10 12:18:58] requested
+[airwaves] [2021-09-10 13:47:37] duration : 249000
+[airwaves] [2021-09-10 13:47:37] /workspace\1hwKE5f6rlbVurALTucT1Y2DICMjybfZ0.jpg
+[airwaves] [2021-09-10 13:47:37] called airtable
+[airwaves] [2021-09-10 13:47:40] duration : 251000
+[airwaves] [2021-09-10 13:47:40] /workspace\1AcUhyhEwQ3l52M6MAL3T5chL5MfWNzUv.jpg
+[airwaves] [2021-09-10 13:47:40] called airtable
+[airwaves] [2021-09-10 13:47:50] requested
+[airwaves] [2021-09-10 13:47:51] requested
+[airwaves] [2021-09-11 20:01:53] duration : null
+[airwaves] [2021-09-11 20:01:53] duration : null
+[airwaves] [2021-09-11 20:01:53] duration : null
+[airwaves] [2021-09-11 20:01:53] /workspace\1pzpfCQeeoyG3whx1Pgs5jnBySuOF9lLB.jpg
+[airwaves] [2021-09-11 20:01:53] called airtable
+[airwaves] [2021-09-11 20:01:53] /workspace\16RBomCA8OT5MwaP__tsRaz5iBWGZUro7.jpg
+[airwaves] [2021-09-11 20:01:53] called airtable
+[airwaves] [2021-09-11 20:01:53] /workspace\1N4J1f6-VEXeegsH-Gw0bONeBTJEJsv6V.jpg
+[airwaves] [2021-09-11 20:01:53] called airtable
+[airwaves] [2021-09-11 20:01:53] duration : null
+[airwaves] [2021-09-11 20:01:53] duration : null
+[airwaves] [2021-09-11 20:01:53] /workspace\19A-WjQRPNIpZZtJq2oQKxQS20DsBGF-m.jpg
+[airwaves] [2021-09-11 20:01:53] called airtable
+[airwaves] [2021-09-11 20:01:53] /workspace\1Mn8Stmk4YGiTxDzfvoEmI2g2c-NpX85M.jpg
+[airwaves] [2021-09-11 20:01:53] called airtable
+[airwaves] [2021-09-11 20:01:54] requested
+[airwaves] [2021-09-11 20:01:54] requested
+[airwaves] [2021-09-11 20:01:54] requested
+[airwaves] [2021-09-11 20:01:55] requested
+[airwaves] [2021-09-11 20:01:55] requested
+[airwaves] [2021-09-11 20:01:59] duration : null
+[airwaves] [2021-09-11 20:01:59] /workspace\1boFa9xP8oO24iJarveopQ7Ka1_1U00E9.jpg
+[airwaves] [2021-09-11 20:01:59] called airtable
+[airwaves] [2021-09-11 20:01:59] duration : null
+[airwaves] [2021-09-11 20:01:59] duration : null
+[airwaves] [2021-09-11 20:01:59] /workspace\16OmE9L1Hps2oIMe3uokBYURru3H82dCW.jpg
+[airwaves] [2021-09-11 20:01:59] called airtable
+[airwaves] [2021-09-11 20:01:59] /workspace\1q_UL2W9s-SVjI5UECIPyq3FyQa8m4i2k.jpg
+[airwaves] [2021-09-11 20:01:59] called airtable
+[airwaves] [2021-09-11 20:02:00] duration : null
+[airwaves] [2021-09-11 20:02:00] /workspace\1n7jbExz5q99XtFYoCa-lk8NKQmBFlymV.jpg
+[airwaves] [2021-09-11 20:02:00] called airtable
+[airwaves] [2021-09-11 20:02:01] duration : null
+[airwaves] [2021-09-11 20:02:01] /workspace\1Kv0bTQBWTgQE04qYz9UNuqhDK-720mBM.jpg
+[airwaves] [2021-09-11 20:02:01] called airtable
+[airwaves] [2021-09-11 20:02:06] duration : null
+[airwaves] [2021-09-11 20:02:06] /workspace\1uwvB6ov8rEhYJSqxGmXlmjsHotSnTUs5.jpg
+[airwaves] [2021-09-11 20:02:06] called airtable
+[airwaves] [2021-09-11 20:02:08] requested
+[airwaves] [2021-09-11 20:02:09] requested
+[airwaves] [2021-09-11 20:02:09] requested
+[airwaves] [2021-09-11 20:02:09] requested
+[airwaves] [2021-09-11 20:02:12] requested
+[airwaves] [2021-09-11 20:02:13] requested
+[airwaves] [2021-09-15 18:47:30] duration : null
+[airwaves] [2021-09-15 18:47:30] duration : null
+[airwaves] [2021-09-15 18:47:30] /workspace\1X8RQp4HEE25EcoN5l4KTMAn2VVfJ8Dxy.jpg
+[airwaves] [2021-09-15 18:47:30] called airtable
+[airwaves] [2021-09-15 18:47:30] /workspace\1Ee2JHbUPAWuGkmM8_u0E0GWidp7d5evm.jpg
+[airwaves] [2021-09-15 18:47:30] called airtable
+[airwaves] [2021-09-15 18:47:31] duration : null
+[airwaves] [2021-09-15 18:47:31] duration : null
+[airwaves] [2021-09-15 18:47:31] duration : null
+[airwaves] [2021-09-15 18:47:31] /workspace\1VS6VQWwZyVHEAo-jCf5aQ-CCcBIhS6rv.jpg
+[airwaves] [2021-09-15 18:47:31] called airtable
+[airwaves] [2021-09-15 18:47:31] /workspace\1rQZpANjRNyEDmN8EfAWZyjVH7DgRCYXT.jpg
+[airwaves] [2021-09-15 18:47:31] called airtable
+[airwaves] [2021-09-15 18:47:31] /workspace\1xdy7ymLCGXgHRMMWEG--2GHTJ80wmO-2.jpg
+[airwaves] [2021-09-15 18:47:31] called airtable
+[airwaves] [2021-09-15 18:47:31] requested
+[airwaves] [2021-09-15 18:47:32] requested
+[airwaves] [2021-09-15 18:47:32] requested
+[airwaves] [2021-09-15 18:47:33] requested
+[airwaves] [2021-09-15 18:47:33] requested
+[airwaves] [2021-09-15 18:47:36] duration : null
+[airwaves] [2021-09-15 18:47:36] /workspace\15AmQbRRk9mKDFyxsuwWtVMmvkt55zVlX.jpg
+[airwaves] [2021-09-15 18:47:36] called airtable
+[airwaves] [2021-09-15 18:47:36] duration : null
+[airwaves] [2021-09-15 18:47:36] /workspace\15JHa6Zx-Bb5iw0wxQZ2yIv6zJZmcaXxY.jpg
+[airwaves] [2021-09-15 18:47:36] called airtable
+[airwaves] [2021-09-15 18:47:44] requested
+[airwaves] [2021-09-15 18:47:46] requested
+[airwaves] [2021-09-15 18:54:17] duration : null
+[airwaves] [2021-09-15 18:54:17] duration : 243000
+[airwaves] [2021-09-15 18:54:17] /workspace\19obNx7r3Su9xeecFkNyK1RLEyjIopJTn.jpg
+[airwaves] [2021-09-15 18:54:17] called airtable
+[airwaves] [2021-09-15 18:54:17] /workspace\1um_JcZBN3LrOb4rr8JlMFwIglGzHIwdz.jpg
+[airwaves] [2021-09-15 18:54:17] called airtable
+[airwaves] [2021-09-15 18:54:17] duration : 304000
+[airwaves] [2021-09-15 18:54:18] duration : null
+[airwaves] [2021-09-15 18:54:18] /workspace\15S84dWeRarWD84relaRosUtwfhj9-RDv.jpg
+[airwaves] [2021-09-15 18:54:18] called airtable
+[airwaves] [2021-09-15 18:54:18] /workspace\1Cy-_iXlTWRN4QHcSBLTwpo7nOI5niB-L.jpg
+[airwaves] [2021-09-15 18:54:18] called airtable
+[airwaves] [2021-09-15 18:54:18] requested
+[airwaves] [2021-09-15 18:54:18] requested
+[airwaves] [2021-09-15 18:54:18] duration : 309000
+[airwaves] [2021-09-15 18:54:18] /workspace\1H9kE507hca31SF15foRs5aO2Mkem-vRm.jpg
+[airwaves] [2021-09-15 18:54:18] called airtable
+[airwaves] [2021-09-15 18:54:19] requested
+[airwaves] [2021-09-15 18:54:19] requested
+[airwaves] [2021-09-15 18:54:21] requested
+[airwaves] [2021-09-15 18:54:24] duration : null
+[airwaves] [2021-09-15 18:54:24] duration : null
+[airwaves] [2021-09-15 18:54:24] duration : null
+[airwaves] [2021-09-15 18:54:24] /workspace\1vvANdy3B2w2E57M1moR5VJEHWhCPUqKZ.jpg
+[airwaves] [2021-09-15 18:54:24] called airtable
+[airwaves] [2021-09-15 18:54:24] /workspace\1L_PgRBNl1gLdDOGc3RIZJZkJ5KgtWiWl.jpg
+[airwaves] [2021-09-15 18:54:24] called airtable
+[airwaves] [2021-09-15 18:54:24] /workspace\1t1DzaODOfH8qOry7hX7CO7Ktws-qK_MV.jpg
+[airwaves] [2021-09-15 18:54:24] called airtable
+[airwaves] [2021-09-15 18:54:32] requested
+[airwaves] [2021-09-15 18:54:32] requested
+[airwaves] [2021-09-15 18:54:33] requested
+[airwaves] [2021-09-15 19:05:51] :( xhr Unexpected HTTP status 403.
+[airwaves] [2021-09-15 19:05:53] :( xhr Unexpected HTTP status 403.
+[airwaves] [2021-09-15 19:05:53] :( xhr Unexpected HTTP status 403.
+[airwaves] [2021-09-15 19:05:54] :( xhr Unexpected HTTP status 403.
+[airwaves] [2021-09-15 19:13:55] :( xhr Unexpected HTTP status 403.

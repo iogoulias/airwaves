@@ -1,14 +1,14 @@
 var jsmediatags = require("jsmediatags");
 var fs=require("fs");
 const express = require("express");
-const cloudinary = require("cloudinary");
+// const cloudinary = require("cloudinary");
 var Airtable = require('airtable');
 var base= new Airtable({apiKey:'keyll8LpyyN3adHhR'}).base('app6GHxtqv6bp7oBk');
-cloudinary.config({ 
-  cloud_name: 'dxpigklxv', 
-  api_key: '463342247927238', 
-  api_secret: 'IO4rR5Crlj4xoepb0cCDwUnKkeU' 
-});
+// cloudinary.config({ 
+//   cloud_name: 'dxpigklxv', 
+//   api_key: '463342247927238', 
+//   api_secret: 'IO4rR5Crlj4xoepb0cCDwUnKkeU' 
+// });
 var bodyParser = require('body-parser');
 var axios = require('axios');
 var cors = require('cors');
@@ -53,11 +53,11 @@ app.get("/artwork", (req, res) => {
 	if ((tag.tags).hasOwnProperty("title")) {
 	title = tag.tags.title;	
 	}
-	var duration=null;
-	if ((tag.tags).hasOwnProperty("TLEN") && (tag.tags.TLEN).hasOwnProperty("data") ) {
-	duration = parseFloat(tag.tags.TLEN.data);	
-	}
-	  console.log("duration : "+duration)
+	// var duration=null;
+	// if ((tag.tags).hasOwnProperty("TLEN") && (tag.tags.TLEN).hasOwnProperty("data") ) {
+	// duration = parseFloat(tag.tags.TLEN.data);	
+	// }
+	//   console.log("duration : "+duration)
       if (image!=null) {
 	 var writeformat=((image.format).split("/"))[1];
 	 if (writeformat=="jpeg") {	 
@@ -71,14 +71,14 @@ app.get("/artwork", (req, res) => {
        //  res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
 console.log(temppath+"\\"+id+"."+writeformat)
 
-res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-rw4kx.ondigitalocean.app/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
+res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-rw4kx.ondigitalocean.app/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title},id,true));	 
 		 
 		// });
 		 
 		 
 	 })
       } else {
-		res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":null,"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,false));
+		res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":null,"Artist":artist,"Album":album,"Track Name":title},id,false));
       }
   },
   onError: function(error) {
