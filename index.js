@@ -31,7 +31,7 @@ app.get('/image', function(req, res) {
 	console.log("requested");
   res.sendFile(path.join(__dirname, '/'+req.query.file));
 });
-app.get("/artwork", (req, res) => {
+app.get("/artwork", async function(req, res) {
 	var id=req.query.id;
 	var file=req.query.file;
 	jsmediatags.read("https://docs.google.com/uc?export=download&id="+id, {
@@ -70,15 +70,16 @@ app.get("/artwork", (req, res) => {
        //  function(error, result) {console.log(result.secure_url);
        //  res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
 console.log(temppath+"\\"+id+"."+writeformat)
-
-res.send(JSON.stringify(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-rw4kx.ondigitalocean.app/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title},id,true)));	 
+var tempresp=await airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-rw4kx.ondigitalocean.app/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title},id,true));
+res.send(JSON.stringify(tempresp));	 
 		 
 		// });
 		 
 		 
 	 })
       } else {
-		res.send(JSON.stringify(airtable({"File ID":id,"File Name":file,"Album Artwork":null,"Artist":artist,"Album":album,"Track Name":title},id,false)));
+	      var tempresp=await airtable({"File ID":id,"File Name":file,"Album Artwork":null,"Artist":artist,"Album":album,"Track Name":title},id,false)
+		res.send(JSON.stringify(tempresp));
       }
   },
   onError: function(error) {
@@ -93,9 +94,9 @@ app.listen(port, () => {
        console.log('Example app is listening on port http://localhost:${port}')
 });
 
-function airtable(fields,id,hasimage) {
+async function airtable(fields,id,hasimage) {
 console.log("called airtable");
-   base('Tracks').create([
+ return await  base('Tracks').create([
       {
       "fields": fields
    }
