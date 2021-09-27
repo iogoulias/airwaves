@@ -63,14 +63,15 @@ app.get("/artwork", function(req, res) {
 	 if (writeformat=="jpeg") {	 
 		 writeformat="jpg";
 	 }
-	 fs.writeFile(id+"."+writeformat,Buffer.from(image.data),"binary",function(){
+	 fs.writeFile(id+"."+writeformat,Buffer.from(image.data),"binary",async function(){
 		var temppath=path.dirname(require.main.filename)
 		// cloudinary.v2.uploader.upload(id+"."+writeformat,
       //  { public_id: id }, 
        //  function(error, result) {console.log(result.secure_url);
        //  res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
 console.log(temppath+"\\"+id+"."+writeformat)
-var tempresp=await airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-rw4kx.ondigitalocean.app/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title},id,true));
+var tempresp=await airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-rw4kx.ondigitalocean.app/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title},id,true);
+console.log(tempresp)
 res.send(JSON.stringify(tempresp));	 
 		 
 		// });
@@ -91,12 +92,15 @@ res.send(JSON.stringify(tempresp));
 });
 
 app.listen(port, () => {
-       console.log('Example app is listening on port http://localhost:${port}')
+       console.log('Example app is listening on port http://localhost:'+port)
 });
 
 async function airtable(fields,id,hasimage) {
 console.log("called airtable");
- return await  base('Tracks').create([
+return new Promise((resolve, reject) => {
+
+      // Handle resolve and reject in the asynchronous API
+  base('Tracks').create([
       {
       "fields": fields
    }
@@ -104,11 +108,12 @@ console.log("called airtable");
    if (err) {
 console.log(fields["File Name"])
     console.error(err);
-    return {"result":"not ok"};
-  } 
-  if (hasimage) {  
-	//  cloudinary.uploader.destroy(id, function(result) { console.log(result) });
+    resolve( {"result":"not ok"});
+  } else {
+  resolve( {"result":"ok"});
   }
-  return {"result":"ok"};
   });
+
+  })
+  
 }
