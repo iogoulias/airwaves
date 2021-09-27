@@ -71,18 +71,19 @@ app.get("/artwork", (req, res) => {
        //  res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":result.secure_url}],"Artist":artist,"Album":album,"Track Name":title,"Duration":duration},id,true));	 
 console.log(temppath+"\\"+id+"."+writeformat)
 
-res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-rw4kx.ondigitalocean.app/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title},id,true));	 
+res.send(JSON.stringify(airtable({"File ID":id,"File Name":file,"Album Artwork":[{"url":"https://airwaves-rw4kx.ondigitalocean.app/image?file="+id+"."+writeformat}],"Artist":artist,"Album":album,"Track Name":title},id,true)));	 
 		 
 		// });
 		 
 		 
 	 })
       } else {
-		res.send(airtable({"File ID":id,"File Name":file,"Album Artwork":null,"Artist":artist,"Album":album,"Track Name":title},id,false));
+		res.send(JSON.stringify(airtable({"File ID":id,"File Name":file,"Album Artwork":null,"Artist":artist,"Album":album,"Track Name":title},id,false)));
       }
   },
   onError: function(error) {
     console.log(':(', error.type, error.info);
+    res.send(JSON.stringify({"result":"unexpected error"}));
   }
 });
       
