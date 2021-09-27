@@ -31,11 +31,11 @@ app.get('/image', function(req, res) {
 	console.log("requested");
   res.sendFile(path.join(__dirname, '/'+req.query.file));
 });
-app.get("/artwork", async function(req, res) {
+app.get("/artwork", function(req, res) {
 	var id=req.query.id;
 	var file=req.query.file;
 	jsmediatags.read("https://docs.google.com/uc?export=download&id="+id, {
-  onSuccess: function(tag) {
+  onSuccess: async function(tag) {
     
 	var image=null;
 	if ((tag.tags).hasOwnProperty("picture")) {
