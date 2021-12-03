@@ -35,18 +35,22 @@ app.get("/artwork", function(req, res) {
     
 	var image=null;
 	if ((tag.tags).hasOwnProperty("picture")) {
+		console.log('has picture');
 	image = tag.tags.picture;	
 	}
 	var artist=null;
 	if ((tag.tags).hasOwnProperty("artist")) {
+		console.log('has artist');
 	artist = tag.tags.artist;	
 	}
 	var album=null;
 	if ((tag.tags).hasOwnProperty("album")) {
+		console.log('has album');
 	album = tag.tags.album;	
 	}
 	var title=null;
 	if ((tag.tags).hasOwnProperty("title")) {
+		console.log('has title');
 	title = tag.tags.title;	
 	}
 	// var duration=null;
