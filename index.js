@@ -1,14 +1,10 @@
 var jsmediatags = require("jsmediatags");
 var fs=require("fs");
 const express = require("express");
-// const cloudinary = require("cloudinary");
+
 var Airtable = require('airtable');
 var base= new Airtable({apiKey:'keyll8LpyyN3adHhR'}).base('app6GHxtqv6bp7oBk');
-// cloudinary.config({ 
-//   cloud_name: 'dxpigklxv', 
-//   api_key: '463342247927238', 
-//   api_secret: 'IO4rR5Crlj4xoepb0cCDwUnKkeU' 
-// });
+
 var bodyParser = require('body-parser');
 var axios = require('axios');
 var cors = require('cors');
@@ -59,6 +55,7 @@ app.get("/artwork", function(req, res) {
 	// }
 	//   console.log("duration : "+duration)
       if (image!=null) {
+		  console.log('has image');
 	 var writeformat=((image.format).split("/"))[1];
 	 if (writeformat=="jpeg") {	 
 		 writeformat="jpg";
@@ -82,7 +79,7 @@ res.send(JSON.stringify(tempresp));
 	      var tempresp=await airtable({"File ID":id,"File Name":file,"Album Artwork":null,"Artist":artist,"Album":album,"Track Name":title},id,false)
 		res.send(JSON.stringify(tempresp));
       }
-  },
+},
   onError: function(error) {
     console.log(':(', error.type, error.info);
     res.send(JSON.stringify({"result":"unexpected error"}));
@@ -117,3 +114,15 @@ console.log(fields["File Name"])
   })
   
 }
+
+
+
+
+// const cloudinary = require("cloudinary");
+
+
+// cloudinary.config({ 
+//   cloud_name: 'dxpigklxv', 
+//   api_key: '463342247927238', 
+//   api_secret: 'IO4rR5Crlj4xoepb0cCDwUnKkeU' 
+// });
