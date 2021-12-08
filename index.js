@@ -66,12 +66,12 @@ app.get("/artwork", function (req, res) {
 					console.log(temppath + "\\" + id + "." + writeformat)
 					var tempresp = await airtable(
 						{ 
-							"Metadata: File ID": id, 
-							"Metadata: File Name": file, 
+							"File ID (Google Drive)": id, 
+							"File Name (Google Drive)": file, 
 							"Album Artwork": [{ "url": "https://airwaves-rw4kx.ondigitalocean.app/image?file=" + id + "." + writeformat }], 
-							"Metadata: Artist": artist, 
-							"Metadata: Artist": album, 
-							"Metadata: Track Name": title 
+							"Artist (Metadata)": artist, 
+							"Artist (Metadata)": album, 
+							"Track Name (Metadata)": title 
 						}, 
 						id, 
 						true
@@ -83,12 +83,12 @@ app.get("/artwork", function (req, res) {
 			} else {
 				var tempresp = await airtable(
 					{ 
-						"Metadata: File ID": id, 
-						"Metadata: File Name": file, 
+						"File ID (Google Drive)": id, 
+						"File Name (Google Drive)": file, 
 						"Album Artwork": null, 
-						"Metadata: Artist": artist, 
-						"Metadata: Album": album, 
-						"Metadata: Track Name": title 
+						"Artist (Metadata)": artist, 
+						"Album (Metadata)": album, 
+						"Track Name (Metadata)": title 
 					}, 
 					id, 
 					false
