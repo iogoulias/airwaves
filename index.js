@@ -97,7 +97,11 @@ app.get("/artwork", function (req, res) {
 			}
 		},
 		onError: function (error) {
-			console.log(':(', error.type, error.info);
+			// console.log(':(', error.type, error.info);
+
+			if(error == 'xhr') console.log(':( ', error.type, error.info, error.xhr);
+            else console.log(':( ', error.type, error.info);
+
 			console.log("error from https://docs.google.com/uc?export=download&id=" + id);
 			res.send(JSON.stringify({ "result": "unexpected error" }));
 		}
