@@ -68,7 +68,7 @@ app.get("/artwork", function (req, res) {
 						{ 
 							"File ID (Google Drive)": id, 
 							"File Name (Google Drive)": file, 
-							"Album Artwork": [{ "url": "https://airwaves-rw4kx.ondigitalocean.app/image?file=" + id + "." + writeformat }], 
+							"Track's Album Artwork": [{ "url": "https://airwaves-rw4kx.ondigitalocean.app/image?file=" + id + "." + writeformat }], 
 							"Artists (Metadata)": artist, 
 							"Album (Metadata)": album, 
 							"Track Name (Metadata)": title 
@@ -85,7 +85,7 @@ app.get("/artwork", function (req, res) {
 					{ 
 						"File ID (Google Drive)": id, 
 						"File Name (Google Drive)": file, 
-						"Album Artwork": null, 
+						"Track's Album Artwork": null, 
 						"Artists (Metadata)": artist, 
 						"Album (Metadata)": album, 
 						"Track Name (Metadata)": title 
