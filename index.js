@@ -118,19 +118,19 @@ async function airtable(fields, id, hasimage) {
 	return new Promise((resolve, reject) => {
 
 		// Handle resolve and reject in the asynchronous API
-		// base('Tracks').create([
-		// 	{
-		// 		"fields": fields
-		// 	}
-		// ], function (err, records) {
-		// 	if (err) {
-		// 		console.log(fields["File Name"])
-		// 		console.error(err);
-		// 		resolve({ "result": "not ok" });
-		// 	} else {
-		// 		resolve({ "result": "ok" });
-		// 	}
-		// });
+		base('Tracks').create([
+			{
+				"fields": fields
+			}
+		], function (err, records) {
+			if (err) {
+				console.log(fields["File Name"])
+				console.error(err);
+				resolve({ "result": "not ok" });
+			} else {
+				resolve({ "result": "ok" });
+			}
+		});
 
 	})
 
