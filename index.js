@@ -30,7 +30,8 @@ app.get('/image', function (req, res) {
 app.get("/artwork", function (req, res) {
 	var id = req.query.id;
 	var file = req.query.file;
-	jsmediatags.read("https://docs.google.com/uc?export=download&id=" + id, {
+	// jsmediatags.read("https://docs.google.com/uc?export=download&id=" + id, {
+	jsmediatags.read("https://www.googleapis.com/drive/v3/files/" + id + "?alt=media&key=AIzaSyDJKpf0XCMy9B09JGzFelyhtovmjJhG-w4", {
 		onSuccess: async function (tag) {
 
 			var image = null;
