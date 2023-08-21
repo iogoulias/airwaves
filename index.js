@@ -2,8 +2,15 @@ var jsmediatags = require("jsmediatags");
 var fs = require("fs");
 const express = require("express");
 
+// var Airtable = require('airtable');
+// var base = new Airtable({ apiKey: 'patQhZ7gCeTq6aAVL.1d6f4d06848b63b2712bc9106df93355fabc39f4da57984e6b4fe885b6f0af19' }).base('app6GHxtqv6bp7oBk');
+
 var Airtable = require('airtable');
-var base = new Airtable({ apiKey: 'patQhZ7gCeTq6aAVL.1d6f4d06848b63b2712bc9106df93355fabc39f4da57984e6b4fe885b6f0af19' }).base('app6GHxtqv6bp7oBk');
+Airtable.configure({
+    endpointUrl: 'https://api.airtable.com',
+    apiKey: 'patQhZ7gCeTq6aAVL.1d6f4d06848b63b2712bc9106df93355fabc39f4da57984e6b4fe885b6f0af19'
+});
+var base = Airtable.base('app6GHxtqv6bp7oBk');
 
 var bodyParser = require('body-parser');
 var axios = require('axios');
